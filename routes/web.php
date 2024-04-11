@@ -29,7 +29,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/aboutus', 'App\Http\Controllers\AboutUsController@principal')->name('site.aboutus');
-Route::get('/', 'App\Http\Controllers\HomePageController@principal')->name('site.home');
+Route::get('/home', 'App\Http\Controllers\HomePageController@principal')->name('site.home');
 Route::get('/contact', 'App\Http\Controllers\ContactController@principal')->name('site.contact');
 Route::get('/news', 'App\Http\Controllers\NewsController@principal')->name('site.news');
 
